@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive page</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Comfortaa:wght@300;400&family=Oleo+Script+Swash+Caps&family=PT+Serif&family=Roboto+Serif:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.header{
+		height: 100vh;
+		
+	}
+	.navbar-style{
+		box-shadow: 0 5px 10px #efefef;
+		text-transform: uppercase;
+	}
+	.logo{
+		height: 48px;
+		padding: 2px 10px;	
+	}
+	.icon-bar{
+		background: darkblue;
+	}
+	li a{
+		color: darkblue;
+
+	}
+	li a:hover{
+		color: darkblue;
+		font-weight: bold;
+	}
+	.big-text{
+		font-size: 50px;
+		margin: 20px 0;
+		color: darkblue;
+		font-family: 'Akaya Telivigala', cursive;
+		font-family: 'Comfortaa', cursive;
+		font-family: 'Oleo Script Swash Caps', cursive;
+		font-family: 'PT Serif', serif;
+		font-family: 'Roboto Serif', serif;
+	}
+	a.btn{
+		margin: 30px 10px;
+		width: 150px;
+		padding:  10px;
+		border-radius: 20px;
+	}
+	a.btn-first{
+		background-color: darkblue;
+		color: #fff;
+	}
+	a.btn-second{
+		background: transparent;
+		border: 1px solid darkblue;
+		color: #333;
+	}
+	a.btn:hover{
+		background: darkblue;
+		border: none;
+		color: #fff;
+		box-shadow: 5px 5px 10px #999;
+		transition: 0.3s;
+	}
+	.banner-info, .banner-image{
+		margin-top: 35px;
+	}
+	.img-responsive{
+      position: absolute;
+  
+      margin-top: 20px;
+
+    }
+	.blob {
+  	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    height: 500px;
+    width: 400px;
+    
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 33%, rgba(44,44,150,0.989233193277311) 73%, rgba(42,42,139,1) 73%, rgba(41,41,133,0.989233193277311) 95%, rgba(41,41,133,0.989233193277311) 100%, rgba(41,41,133,0.989233193277311) 100%);
+
+  animation: morph 10s linear infinite alternate;
+  position: absolute;
+  margin-left: 670px;
+  margin-top: 50px;
+}
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+	
+</style>
+
+
+</head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle = "collapse" data-target = "#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+
+					<a href=""><img class = "logo" src="logo.png"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="micon">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="">Home</a></li>
+					<li><a href="">Team</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">about</a></li>
+					<li><a href="">contact us</a></li>
+				</ul>
+				</div>
+			</div>
+		</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 banner-info">
+				<h1>Choose Your Product</h1>
+				<p class="big-text">Buy product whichever you want</p>
+				<p>Beautiful Product with suitable price from this website.</p>
+				<a href="#" class="btn btn-first">Shoping</a>
+				<a href="#" class="btn btn-second"> Sign Up </a>
+			</div>
+			<div class = "blob"></div>
+			<div class="col-sm-6 banner-image">
+				<img src="shoping.png" class="img-responsive">
+			</div>
+		</div>
+	</div>
+
+	</header>
+
+
+</body>
+</html>
